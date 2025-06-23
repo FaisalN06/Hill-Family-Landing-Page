@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
         perPage: 3,
         autoplay: true,
         pagination: true,
+        speed: 35000,
         arrows: false,
         gap: '20px',
         breakpoints: {
