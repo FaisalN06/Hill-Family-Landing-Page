@@ -4,6 +4,13 @@ const navCollapse = document.getElementById('navCollapse');
 toggler.addEventListener('click', () => {
     navCollapse.classList.toggle('active');
     toggler.classList.toggle('open');
+
+    // Disable or enable scroll based on navbar state
+    if (navCollapse.classList.contains('active')) {
+        document.body.classList.add('no-scroll');
+    } else {
+        document.body.classList.remove('no-scroll');
+    }
 });
 
 // Aos
@@ -57,7 +64,6 @@ document.addEventListener('DOMContentLoaded', function () {
         perPage: 3,
         autoplay: true,
         pagination: true,
-        speed: 35000,
         arrows: false,
         gap: '20px',
         breakpoints: {

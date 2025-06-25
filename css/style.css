@@ -184,6 +184,13 @@ header {
     }
 }
 
+/* Disable body scroll */
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
+
 /* Hero Section */
 
 .hero-section {
