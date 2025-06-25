@@ -398,7 +398,7 @@ header {
 
 /* Responsive */
 
-@media (max-width: 425px) {
+@media (max-width: 576px) {
     .main-heading {
         font-size: 20px;
     }
@@ -529,7 +529,7 @@ header {
 
 /* Responsive */
 
-@media (max-width: 425px) {
+@media (max-width: 576px) {
     .services-sec {
         padding: 0;
         background-color: #f8f8f8;
@@ -542,7 +542,7 @@ header {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .col-33 {
         width: 100%;
     }
@@ -723,7 +723,7 @@ header {
 }
 
 .doctor-card:hover {
-    transform: rotateY(90deg) !important;
+    transform: translateY(-2.1rem) !important;
 }
 
 .doctor-card img {
@@ -867,8 +867,9 @@ header {
     color: #65b741;
 }
 
+
 .blog-card {
-    min-height: 485px;
+    min-height: 421px;
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
