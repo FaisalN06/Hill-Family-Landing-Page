@@ -14,10 +14,11 @@ toggler.addEventListener('click', () => {
 });
 
 // Aos
+
 AOS.init({
     duration: 800,
-    once: true
 });
+
 // splide js 
 document.addEventListener('DOMContentLoaded', function () {
     new Splide('#partner-slider', {
@@ -131,6 +132,31 @@ document.addEventListener("DOMContentLoaded", function () {
         // Simulate successful submission
         alert("Appointment submitted successfully!");
         form.reset();
+    });
+});
+
+// more option
+
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleButtons = document.querySelectorAll('.toggle-options');
+
+    toggleButtons.forEach(button => {
+        button.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const sectionGroup = this.closest('.section-group');
+
+            const additionalOptions = sectionGroup.querySelector('.additional-options');
+
+            // Toggle display and text
+            if (additionalOptions.style.display === 'none' || !additionalOptions.style.display) {
+                additionalOptions.style.display = 'block';
+                this.textContent = 'less...';
+            } else {
+                additionalOptions.style.display = 'none';
+                this.textContent = 'more...';
+            }
+        });
     });
 });
 
