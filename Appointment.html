@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- custom css -->
     <link rel="stylesheet" href="./css/Appointment.css">
+    <!-- aos css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -35,7 +37,7 @@
                     <div class="nav-collapse" id="navCollapse">
                         <ul>
                             <li><a class="nav-links" href="index.html">Home</a></li>
-                            <li><a class="nav-links" href="#about-sec">About us</a></li>
+                            <li><a class="nav-links" href="index.html#about-sec">About us</a></li>
                             <li><a class="nav-links active" href="#services-sec">Find Doctor's</a></li>
                             <li><a class="nav-links" href="index.html#recent-blogs">Blog</a></li>
                             <li><a class="nav-links" href="index.html#footer">Contact</a></li>
@@ -51,24 +53,34 @@
 
     <!-- banner section -->
 
-    <Section class="banner-sec">
+    <section class="banner-sec">
         <div class="container">
-            <div class="banner-img">
-                <img src="./Assets/img/banner.png" alt="banner">
+            <div class="banner-img" data-aos="fade-up" data-aos-duration="2500">
+                <img src="./Assets/img/ap img.png" alt="banner" data-aos="zoom-in" data-aos-delay="200">
+                <div class="content" data-aos="fade-right" data-aos-delay="400">
+                    <h2>
+                        Don’t Let Your Health<br>
+                        Take a Backseat!
+                    </h2>
+                    <p>
+                        Fill out the appointment form below to schedule a
+                        consultation with one of our healthcare professionals.
+                    </p>
+                </div>
             </div>
         </div>
-    </Section>
+    </section>
 
 
     <!-- form section -->
 
-    <section class="form-section">
+    <section class="form-section" data-aos="fade-up">
         <div class="container">
             <div class="row">
                 <div class="form-wrapper">
 
                     <!-- Left Column - Form -->
-                    <div class="form-col">
+                    <div class="form-col" data-aos="fade-right" data-aos-duration="1000">
                         <h2>Appointment</h2>
                         <form id="appointmentForm">
                             <div class="form-row">
@@ -105,19 +117,52 @@
                                 <a href="#">more...</a>
                             </div>
 
-                            <button type="submit" class="submit-btn">Submit →</button>
+                            <button type="submit" class="submit-btn" data-aos="zoom-in">Submit →</button>
                         </form>
                     </div>
 
                     <!-- Right Column - Image -->
-                    <div class="image-col">
-                        <img src="./Assets/img/app img.png" alt="App Preview" class="responsive-img" />
+                    <div class="image-col" data-aos="fade-left" data-aos-duration="1000">
+                        <img src="./Assets/img/mobile.png" alt="App Preview" class="responsive-img" />
+                        <div class="col-content">
+                            <div class="bg-wrapper">
+                                <img src="./Assets/img/ap 1.png" alt="bg 1" class="bg1" data-aos="fade-down-right"
+                                    data-aos-delay="100">
+                                <img src="./Assets/img/ap 2.png" alt="bg 2" class="bg2" data-aos="fade-down"
+                                    data-aos-delay="200">
+                                <img src="./Assets/img/ap 3.png" alt="bg 3" class="bg3" data-aos="fade-down-left"
+                                    data-aos-delay="300">
+                            </div>
+                            <div class="head-1" data-aos="fade-up">
+                                <h2>
+                                    Download the <br>
+                                    <span>Surya Nursing Home</span> App
+                                </h2>
+                                <p>Get the link to download the app</p>
+                            </div>
+                            <div class="phone-input" data-aos="zoom-in" data-aos-delay="400">
+                                <div class="country-code">+91</div>
+                                <input type="tel" class="phone-number" placeholder="Enter phone number">
+                                <button class="cool-button">Send SMS</button>
+                            </div>
+                            <div class="btn" data-aos="fade-up" data-aos-delay="500">
+                                <button class="google-play-btn">
+                                    <i class="fa-brands fa-google-play"></i>
+                                    <span>Google Play</span>
+                                </button>
+                                <button class="google-play-btn">
+                                    <i class="fa-brands fa-apple"></i>
+                                    <span>App Store</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
             </div>
         </div>
     </section>
+
 
 
     <!-- footer -->
@@ -179,6 +224,10 @@
     </footer>
 
     <script src="./js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

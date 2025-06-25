@@ -144,6 +144,7 @@ header {
         position: absolute;
         top: 123px;
         right: 0;
+        gap: 15px;
         background-color: #F9F9F9;
         flex-direction: column;
         align-items: flex-start;
