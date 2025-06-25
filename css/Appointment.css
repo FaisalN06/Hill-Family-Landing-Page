@@ -13,6 +13,7 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     font-family: "Poppins";
     background-color: #f3f3f3;
 }
