@@ -18,6 +18,12 @@ body {
     background-color: #f3f3f3;
 }
 
+/* Disable body scroll */
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
 .container {
     max-width: 1450px;
     margin: 0 auto;
@@ -124,7 +130,7 @@ header {
 @media (max-width: 1024px) {
     .nav-collapse {
         position: absolute;
-        top: 123px;
+        top: 95px;
         gap: 15px;
         right: 0;
         background-color: #F9F9F9;
